@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Die Mossadegh-Lüge</title>
+<style>
+  :root {
+    --bg: #faf8f5;
+    --text: #2d2a26;
+    --text-soft: #5c5752;
+    --accent: #8b6f47;
+    --rule: #e6e0d6;
+    --footnote-bg: #f3efe8;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 0.8rem;
+    letter-spacing: -0.01em;
+  }
+
+  .subtitle {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: var(--text-soft);
+    font-style: italic;
+    margin: 0 0 1.5rem;
+    line-height: 1.4;
+  }
+
+  .author {
+    font-size: 0.95rem;
+    color: var(--text-soft);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 3rem 0 1.2rem;
+    color: var(--text);
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    margin: 0 0 1.2rem;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  p.lead {
+    font-size: 1.1rem;
+    color: var(--text);
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  blockquote, q {
+    quotes: "»" "«";
+  }
+
+  q::before { content: open-quote; }
+  q::after { content: close-quote; }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  .footnote-ref {
+    font-size: 0.75em;
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 1px;
+    color: var(--accent);
+    border-bottom: none;
+    font-weight: 600;
+  }
+
+  .footnote-ref:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  .footnotes {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.88rem;
+    color: var(--text-soft);
+    line-height: 1.6;
+  }
+
+  .footnotes h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+  }
+
+  .footnotes ol {
+    padding-left: 1.5rem;
+  }
+
+  .footnotes li {
+    margin-bottom: 0.9rem;
+    padding-left: 0.3rem;
+  }
+
+  .footnotes li:target {
+    background: var(--footnote-bg);
+    border-radius: 4px;
+    padding: 0.5rem 0.6rem;
+    transition: background 0.3s;
+  }
+
+  .backref {
+    text-decoration: none;
+    margin-left: 0.3rem;
+    color: var(--accent);
+    font-size: 0.85em;
+  }
+
+  hr.section-break {
+    border: none;
+    text-align: center;
+    margin: 2.5rem 0;
+  }
+
+  hr.section-break::before {
+    content: "✦";
+    color: var(--accent);
+    font-size: 0.9rem;
+    letter-spacing: 0.5em;
+  }
+
+  .closing {
+    margin-top: 2rem;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--text);
+  }
+
+  @media (max-width: 600px) {
+    body { font-size: 17px; }
+    .container { padding: 2.5rem 1.25rem 4rem; }
+    h1 { font-size: 1.9rem; }
+    .subtitle { font-size: 1rem; }
+    h2 { font-size: 1.3rem; }
+    p { text-align: left; }
+  }
+
+  @media print {
+    body { background: white; }
+    .container { padding: 1cm; max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Die Mossadegh-Lüge</h1>
+  <p class="subtitle">Wie ein gescheiterter CIA-Plan zur westlichen Erbsünde umgeschrieben wurde</p>
+  <p class="author">Ole</p>
+</header>
+
+<article>
+
+<p class="lead">Es gibt Geschichten, die sind so oft erzählt worden, dass niemand mehr fragt, ob sie stimmen. Die Geschichte vom CIA-Putsch gegen Mohammad Mossadegh ist eine davon.</p>
+
+<p>Sie geht ungefähr so: Im August 1953 stürzte die CIA und der MI6, im Auftrag amerikanischer und britischer Interessen, den demokratisch gewählten iranischen Premierminister. Sie setzte den Schah als Marionette ein. Sie zerstörte damit Irans demokratische Zukunft und legte den Grundstein für die Islamische Revolution von 1979, für den Antiamerikanismus, für die Mullahs, für alles, was seither schiefgegangen ist.</p>
+
+<p>Diese Erzählung ist in den letzten zwei Jahrzehnten zur Pflichtübung des deutschen Mainstreams geworden. Olaf Scholz erklärte vor kurzem öffentlich, das gesamte iranische Dilemma sei darauf zurückzuführen, dass Briten und Amerikaner damals die demokratische Regierung Irans gestürzt hätten. Ohne diesen Sturz wäre Iran heute &raquo;ein sehr erfolgreiches westliches Land&laquo;. Richard David Precht griff dasselbe Narrativ auf: bei Markus Lanz, in seinem Podcast, immer wieder. Natalie Amiri verweist in ARD-Interviews auf 1953 als das Schlüsseldatum, ohne das man Iran nicht verstehen könne. Ines Schwerdtner von den Linken zog im Bundestag dieselbe Linie: Regimewechsel von außen brächten keine Freiheit, sondern einen Flächenbrand. Selbst die Bundeszentrale für politische Bildung nennt 1953 die &raquo;Urkatastrophe&laquo; Irans.</p>
+
+<p>Das Problem ist nur: Die Geschichte stimmt nicht.</p>
+
+<p>Nicht teilweise nicht. Sie ist nicht &raquo;differenziert zu betrachten&laquo;. Sie stimmt nicht.</p>
+
+<h2>Was Mossadegh nicht war</h2>
+
+<p>Beginnen wir mit dem Etikett, das alles trägt: &raquo;demokratisch gewählt&laquo;.</p>
+
+<p>Mossadegh wurde nicht vom Volk gewählt. Die iranische Verfassung von 1906 sah eine direkte Wahl des Regierungschefs nicht vor. Artikel 46 des Ergänzungsgesetzes wies die Ernennung und Entlassung des Premierministers ausdrücklich dem König zu.<a href="#fn1" id="fnref1" class="footnote-ref">1</a> Mossadegh kam 1951 ins Amt, weil der Schah ihn ernannte, nach einem unverbindlichen Neigungsvotum des Parlaments, in der Erwartung, der 69-jährige Aristokrat werde dankend ablehnen. Zur Überraschung des Schahs nahm er an.</p>
+
+<p>Das ist der genaue Vorgang, den der Mythos als &raquo;demokratische Wahl&laquo; verkauft. Wer Mossadegh demokratisch gewählt nennt, müsste konsequenterweise auch jeden vom US-Senat bestätigten Minister oder Botschafter so bezeichnen. Niemand tut das.</p>
+
+<p>Mossadegh war kein Mann des Volkes. Er war Qajar-Prinz, Spross jener Dynastie, die den Iran über mehr als ein Jahrhundert lang in einen Zustand chronischer Schwäche regiert hatte. Unter den Qajaren war Iran kein souveräner Staat, sondern ein Beuteobjekt. Russen und Briten teilten das Land 1907 vertraglich in Einflusszonen auf, die Wirtschaft war an ausländische Konzessionen verschachert, das Hinterland zerfiel in die Hände lokaler Stammesführer und Warlords, und die Zentralregierung in Teheran kontrollierte oft kaum mehr als die eigene Hauptstadt. Es war genau dieser Zerfall, der die Konstitutionelle Revolution von 1906 hervorbrachte. Und es waren genau jene Konstitutionalisten, die zwei Jahrzehnte später gemeinsam mit Reza Khan, dem späteren Reza Schah Pahlavi, die Qajar-Dynastie 1925 endgültig stürzten. Die Pahlavis kamen also nicht gegen die iranische Verfassungsbewegung an die Macht, sondern mit ihr, als Antwort auf das Versagen jener Aristokratie, der Mossadegh entstammte. Sein Titel <em>Mossadegh ol-Saltaneh</em>, &raquo;der zum Monarchen Gehörige&laquo;, war kein Spitzname, sondern ein Adelsprädikat aus eben jener gestürzten Ordnung. Und seine Koalition, die Nationalfront, war keine demokratische Bewegung, sondern ein loses Bündnis aus feudalen Großgrundbesitzern, religiösen Konservativen und Basar-Händlern, gehalten allein durch zwei gemeinsame Forderungen: Verstaatlichung des Öls und Ablehnung jener Modernisierungspolitik, mit der die Pahlavis das Erbe der Qajaren, Analphabetismus, Stammesherrschaft, ausländische Durchdringung, abzuwickeln versuchten. Wer Mossadegh zum Helden der iranischen Demokratie erklärt, übersieht die Ironie: Der Mann, der die Pahlavis bekämpfte, war ein Repräsentant genau jener alten Ordnung, deren Beseitigung erst die Voraussetzung dafür geschaffen hatte, dass Iran überhaupt ein moderner Staat werden konnte.</p>
+
+<h2>Was Mossadegh tat</h2>
+
+<p>Aber er war doch immerhin ein Demokrat im Geiste, oder? Ein Mann, der die Verfassung schützte, das Parlament respektierte, die Institutionen wahrte?</p>
+
+<p>Nein.</p>
+
+<p>1952 ließ Mossadegh die Parlamentswahlen zum 17.&nbsp;Majles abbrechen, in dem Moment, in dem die Anzahl der bereits gewählten Abgeordneten gerade ausreichte, um das Parlament beschlussfähig zu machen. Die noch ausstehenden Wahlen in den ländlichen Provinzen, wo konservative Kräfte Mehrheiten zu gewinnen drohten, fanden nie statt. Das Parlament, mit dem er regierte, war damit ein von ihm selbst zugeschnittenes Parlament.<a href="#fn2" id="fnref2" class="footnote-ref">2</a></p>
+
+<p>Im Sommer 1953 löste er dieses unvollständige Parlament dann auch noch auf, per Volksreferendum, ein Instrument, das die iranische Verfassung nicht kannte und nicht vorsah. Das Recht zur Parlamentsauflösung lag nach Artikel&nbsp;48 ausschließlich beim König. Mossadegh umging das, indem er sich direkt auf den &raquo;Willen des Volkes&laquo; berief. Die Abstimmung am 3.&nbsp;August 1953 fand ohne geheime Wahl statt: Ja- und Nein-Stimmen wurden in räumlich getrennten Lokalen abgegeben, jeder Wähler musste öffentlich sichtbar machen, wie er stimmte. Das amtliche Ergebnis: zwei Millionen Ja-Stimmen gegen 1.207 Nein-Stimmen. Selbst Mossadeghs Nichte Sattareh Farmanfarmaian beschrieb in ihren Memoiren ihre Fassungslosigkeit über diesen Akt.<a href="#fn3" id="fnref3" class="footnote-ref">3</a></p>
+
+<p>Parallel dazu ließ er sich vom Majles Notstandsvollmachten gewähren, die ihm das Recht einräumten, per Dekret zu regieren, zunächst sechs Monate, dann verlängert um ein weiteres Jahr. Er entmachtete den Obersten Gerichtshof. Er übernahm das Verteidigungsministerium persönlich, kürzte dessen Budget um fünfzehn Prozent, entließ 136 Offiziere und ernannte seinen eigenen Neffen zum Stellvertreter.</p>
+
+<p>Und, das ist die Episode, die in der westlichen Mossadegh-Hagiographie systematisch fehlt: er verriet die iranische Frauenbewegung. Seine Cousine Mehrangeez Dowlatshahi hatte Frauenorganisationen im ganzen Land mobilisiert, in der Erwartung, Mossadegh werde das Frauenwahlrecht einführen. Erste Reformentwürfe enthielten die entsprechende Klausel. Als Ayatollah Kashani protestierte, strich Mossadegh sie. Die Frauen, die ihn unterstützt hatten, wurden nicht einmal informiert. Es war Mohammad Reza Schah, der das Frauenwahlrecht zehn Jahre später durchsetzen sollte, gegen den Widerstand desselben Klerus, dem Mossadegh nachgegeben hatte.<a href="#fn4" id="fnref4" class="footnote-ref">4</a></p>
+
+<h2>Was die CIA tat (und was nicht)</h2>
+
+<p>Kommen wir zum eigentlichen Kern: Hat die CIA Mossadegh gestürzt?</p>
+
+<p>Die ehrliche Antwort ist: Nein. Aber sie ist es nicht, weil die CIA es nicht versucht hätte. Sie ist es, weil der Versuch gescheitert ist.</p>
+
+<p>Operation TPAJAX wurde am 15.&nbsp;August 1953 in Gang gesetzt. Oberst Nassiri, Kommandeur der kaiserlichen Garde, brachte Mossadegh das vom Schah unterzeichnete Absetzungsdekret. Mossadegh, von Tudeh-Kontakten in der Armee vorgewarnt, ließ Nassiri verhaften. Der Schah floh aus dem Land. Die Operation brach zusammen.</p>
+
+<p>Das ist nicht die Behauptung irgendwelcher Randfiguren. Genau das steht im Wilber-Dokument selbst, dem CIA-internen Bericht, der 2013 deklassifiziert wurde und seither reflexartig als Beweis für das Putschnarrativ zitiert wird. Der Bericht protokolliert minutiös das eigene Scheitern. Die CIA-Station übermittelte nach Washington, man müsse die Operation aufgeben und sich &raquo;mit Mossadegh arrangieren&laquo;. Walter Bedell Smith, Eisenhowers Stabschef, überbrachte dem Präsidenten die schlechte Nachricht.<a href="#fn5" id="fnref5" class="footnote-ref">5</a></p>
+
+<p>Was am 19.&nbsp;August folgte, der Tag, an dem Mossadegh tatsächlich gestürzt wurde, ist deshalb so kontrovers, weil bis heute niemand seriös belegen kann, wer die Ereignisse koordinierte. Die CIA-Eigenstudie von 2017 (&raquo;Zendebad, Shah!&laquo;), die Akten des State Department und die Untersuchungen des National Security Archive halten übereinstimmend fest: Es lässt sich nicht feststellen, wer die Demonstrationen und Mob-Aktionen dieses Tages dirigierte.<a href="#fn6" id="fnref6" class="footnote-ref">6</a></p>
+
+<p>Was sich feststellen lässt, ist Folgendes:</p>
+
+<p>Die CIA hatte ab dem 13.&nbsp;August keine operative Kontrolle mehr über das Geschehen. Die eigene Station notierte: &raquo;CIA cut out of military preparations by Batmanqelij and Zahedi.&laquo; General Zahedi handelte aus seinem Versteck heraus über sein eigenes Militärnetzwerk, ein Netzwerk, das er aufgebaut hatte, lange bevor ein Kermit Roosevelt den Iran betrat. Die Großayatollahs Borujerdi und Behbehani mobilisierten die Straße. Ayatollah Kashani, von Mossadegh gedemütigt, lieferte religiöse Legitimation. Die Tudeh-Partei riss Schah-Statuen nieder und alarmierte damit den Klerus, der eine kommunistische Übernahme fürchtete. Der Basar schloss. Das Militär marschierte.</p>
+
+<p>Was Kermit Roosevelt nach dem 16.&nbsp;August tatsächlich tat, war: Er ließ die königlichen Dekrete an die Presse verteilen. Mehr ist seriös nicht belegt. Sein Buch <em>Countercoup</em> von 1979, auf dem ein Großteil des Putschnarrativs ruht, ist Selbstinszenierung: Er erfand darin sogar Botschaften Eisenhowers, die nie gesendet wurden. Die paradoxe Situation der Geschichtsschreibung: Wer der CIA misstraut, glaubt ausgerechnet einem CIA-Mann jedes Wort. Die CIA selbst bezeichnete das Buch nach redaktionellen Eingriffen intern als &raquo;essentially a work of fiction&laquo;.<a href="#fn7" id="fnref7" class="footnote-ref">7</a></p>
+
+<p>Dass Geld floss, ist unstrittig. Dass dieses Geld die Ereignisse des 19.&nbsp;August steuerte, ist eine Behauptung, die durch keine Akte gedeckt ist. Die CIA hat ihre gescheiterte Operation eingestanden. Sie hat nicht eingestanden, und kann nicht eingestehen, dass sie die erfolgreiche Absetzung dirigierte. Weil sie es nicht tat.</p>
+
+<h2>Wem nützt die Lüge?</h2>
+
+<p>Bleibt die unangenehme Frage: Warum hält sich diese Geschichte trotzdem so hartnäckig?</p>
+
+<p>Weil sie zu vielen Akteuren zu vieles bietet, um zu verschwinden.</p>
+
+<p>Sie nützt der westlichen Linken, die nach Vietnam ein Vokabular der amerikanischen Schuld brauchte. Iran wurde zur Folie, auf der sich &raquo;Imperialismus&laquo; jenseits der südostasiatischen Niederlage demonstrieren ließ. Stephen Kinzers <em>All the Shah's Men</em> (2003) leitete sogar 9/11 von 1953 ab, eine Kausalkette, die so absurd ist, dass sie nur funktioniert, wenn niemand nachfragt.</p>
+
+<p>Die CIA selbst profitierte ebenfalls massiv von diesem Narrativ. Die Ereignisse rund um 1953 waren für den Westen und den Iran ein voller Erfolg: Der kommunistische Einfluss wurde zurückgedrängt, ein drohendes Chaos vermieden, und in den folgenden Jahrzehnten bis 1979 erlebte der Iran eine der beeindruckendsten wirtschaftlichen Entwicklungen seiner Geschichte, von der Modernisierung der Infrastruktur über Bildungs- und Landreformen bis hin zu einem raschen industriellen Aufschwung. Die CIA, damals noch eine junge und profilierungshungrige Behörde, wollte sich mit diesen Federn schmücken, wenn auch streng hinter vorgehaltener Hand. Sie nutzte den Ausgang der Operation intern, um ihre Position als zentrales Instrument der US-Außenpolitik zu festigen, genehmigte und redigierte Kermit Roosevelts Buch <em>Countercoup</em>, das das Bild eines triumphalen Coups popularisierte.<a href="#fn8" id="fnref8" class="footnote-ref">8</a></p>
+
+<p>Sie nützt westlichen Politikern, die Diplomatie und Appeasement mit Teheran als Sühne für vergangene Schuld inszenieren wollen. Madeleine Albright entschuldigte sich im Jahr 2000. Barack Obama wiederholte die Legende in Kairo 2009 und in seinen Memoiren. John Kerry verhandelte den Atomdeal mit Diplomaten, die, geschult in der Sprache westlicher Selbstanklage, die Mossadegh-Karte routiniert zogen, wann immer der Druck am Verhandlungstisch zu groß wurde.</p>
+
+<p>Aber niemandem nützt sie mehr als dem Regime in Teheran selbst.</p>
+
+<p>Ali Khamenei ist tot. Das System, das er über Jahrzehnte verkörperte, lebt zum Zeitpunkt dieses Artikels vorerst weiter, und mit ihm die Funktion, die der Mossadegh-Mythos für dieses System hat. Solange die Welt über 1953 redet, redet sie nicht über 1979. Solange über den vermeintlichen CIA-Putsch debattiert wird, nicht über die Massenhinrichtungen von 1988, bei denen Tausende politische Gefangene auf Khomeinis Befehl ermordet wurden. Solange Mohammad Reza Schah als &raquo;amerikanische Marionette&laquo; erscheint, müssen sich die Revolutionsgarden, die seit 1979 Terror in Dutzenden Ländern finanzieren, nicht erklären. Solange der Westen sich selbst anklagt, muss das Regime in Teheran sich nicht anklagen lassen.</p>
+
+<p>Die Legende vom Putsch ist die wichtigste Waffe der Islamischen Republik. Nicht ihre Raketen. Nicht ihre Stellvertretermilizen. Nicht einmal ihr Atomprogramm.</p>
+
+<p>Sondern eine Geschichte, die der Westen sich selbst erzählt, und die das Regime sich bequem zurückgelehnt anhört.</p>
+
+<h2>Was es für uns bedeutet</h2>
+
+<p>Im Januar 2026 starben schätzungsweise zehntausende iranische Demonstranten unter dem Beschuss eigener Sicherheitskräfte. Augenzeugen berichteten von Hunderten Leichen in den Straßen. Das Regime schaltete das Internet ab, damit die Welt nicht zusehen konnte.</p>
+
+<p>In genau diesem Moment erklärten deutsche Politiker, Talkshow-Intellektuelle und ÖRR-Korrespondenten, der eigentliche Schlüssel zum Verständnis Irans liege in einem 73 Jahre alten Ereignis, das in Wahrheit nicht so stattgefunden hat, wie sie es nacherzählen. Sie taten dies in der Überzeugung, etwas Aufgeklärtes zu sagen.</p>
+
+<p>Das ist der eigentliche Skandal. Nicht, dass die Geschichte falsch erzählt wird. Sondern dass sie in dem Moment falsch erzählt wird, in dem die Opfer dieses Regimes auf den Straßen sterben, und dass die Lüge ausgerechnet jenen den Rücken freihält, die geschossen haben.</p>
+
+<p>Sondern weil jede Wiederholung dieser Lüge ein Schlag ins Gesicht jener Iraner ist, die seit 1979 gefoltert, gehängt und erschossen wurden, damit das Regime weiter regieren kann. Die iranische Tragödie begann nicht 1953. Sie begann 1979.</p>
+
+<hr class="section-break">
+
+<p class="closing">Und sie ist bald zu Ende.</p>
+
+</article>
+
+<section class="footnotes">
+  <h2>Anmerkungen</h2>
+  <ol>
+    <li id="fn1">Iranische Verfassung von 1906 (Supplemental Fundamental Laws), Art.&nbsp;46: &raquo;The appointment and dismissal of Ministers is effected by virtue of the Royal Decree of the King.&laquo; (Offizieller Text: Foundation for Iranian Studies / fis-iran.org und Iran Data Portal, Syracuse University). <a href="#fnref1" class="backref">↩</a></li>
+    <li id="fn2">Ervand Abrahamian, <em>Iran Between Two Revolutions</em> (Princeton University Press, 1982), S.&nbsp;269 (zur Unterbrechung der Wahlen zum 17.&nbsp;Majles 1952). <a href="#fnref2" class="backref">↩</a></li>
+    <li id="fn3">Offizielle Ergebnisse des Referendums 3.–10.&nbsp;August 1953: 2.043.389 Ja-Stimmen zu 1.207 Nein-Stimmen (99,94&nbsp;%). <em>Time Magazine</em>, 17.&nbsp;August 1953 (&raquo;IRAN: 99.93% Pure&laquo;); Sattareh Farmanfarmaian, <em>Daughter of Persia</em> (Memoiren); Wikipedia &raquo;1953 Iranian parliamentary dissolution referendum&laquo; (basierend auf Primärquellen). <a href="#fnref3" class="backref">↩</a></li>
+    <li id="fn4">Hamideh Tafreshi, PhD-Thesis &raquo;The history of the journey of Iranian women in the last century&laquo; (Washington University, 2010); IranWire: &raquo;Iranian Influential Women: Mehrangiz Dowlatshahi&laquo; (2023). <a href="#fnref4" class="backref">↩</a></li>
+    <li id="fn5">Donald N.&nbsp;Wilber, <em>Clandestine Service History: Overthrow of Premier Mossadeq of Iran, November 1952–August 1953</em> (CIA-interne Geschichte, März 1954, vollständig deklassifiziert 2013). National Security Archive: <a href="https://nsarchive2.gwu.edu/NSAEBB/ciacase/Clandestine%20Service%20History.pdf">nsarchive2.gwu.edu</a>. <a href="#fnref5" class="backref">↩</a></li>
+    <li id="fn6">Scott A.&nbsp;Koch, <em>&raquo;Zendebad, Shah!&laquo;: The Central Intelligence Agency and the Fall of Iranian Prime Minister Mohammed Mossadeq, August 1953</em> (CIA History Staff, Juni 1998; weitere Freigaben 2017). National Security Archive: <a href="https://nsarchive.gwu.edu/briefing-book/iran/2018-02-12/cia-declassifies-more-zendebad-shah-internal-study-1953-iran-coup">nsarchive.gwu.edu</a>. <a href="#fnref6" class="backref">↩</a></li>
+    <li id="fn7">National Security Archive Electronic Briefing Book No.&nbsp;468: &raquo;Iran 1953: The Strange Odyssey of Kermit Roosevelt's Countercoup&laquo; (12.&nbsp;Mai 2014); interne CIA-Memos zur Bewertung von <em>Countercoup</em> (1979) als &raquo;essentially a work of fiction&laquo;. <a href="#fnref7" class="backref">↩</a></li>
+    <li id="fn8">Scott A.&nbsp;Koch, <em>&raquo;Zendebad, Shah!&laquo;</em> (CIA History Staff, 1998/2017), S.&nbsp;79&nbsp;ff.: Die Operation TPAJAX &raquo;strengthen[ed] the CIA's position within the government as an instrument of policy&laquo; und festigte die Rolle der jungen CIA als zentrales Instrument der US-Außenpolitik. National Security Archive Electronic Briefing Book No.&nbsp;468 (2014) zur CIA-Genehmigung und redaktionellen Bearbeitung von Roosevelts <em>Countercoup</em>; James Risen, &raquo;SECRETS OF HISTORY: The C.I.A. in Iran&laquo;, <em>The New York Times</em>, 16.&nbsp;April 2000 (über CIA-gesteuerte Propaganda-Artikel und Einflussnahme auf US-Medien). <a href="#fnref8" class="backref">↩</a></li>
+  </ol>
+</section>
+
+</div>
+</body>
+</html>
